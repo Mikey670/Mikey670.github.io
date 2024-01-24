@@ -1,9 +1,17 @@
 body {
     text-align: center;
 }
+.main-para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
+}
+#active {
+  background-color: white;
+  color: steelblue;
 }
 a {
     color: white;
