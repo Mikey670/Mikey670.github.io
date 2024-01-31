@@ -16,7 +16,9 @@ a {
     margin: 40px;
 }
 h1, nav, footer {
-    text-align: center;
+  background-color: steelblue;
+  color: white;
+  padding: 10px;
   }
   img {
     width: 80%;
