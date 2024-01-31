@@ -14,6 +14,7 @@ nav {
   color: steelblue;
 }
 a {
+    font-size: 1.5em;
     color: white;
     margin: 40px;
 }
@@ -21,10 +22,11 @@ h1 {
     color: steelblue;
   }
   img {
-    width: 800px;
+    width: 80%;
     border: 4px solid steelblue;
   }
   p {
+    width: 80%;
     padding: 10px;
   }
   footer {
