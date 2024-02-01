@@ -1,0 +1,29 @@
+body {
+    background-color: #ff99dd;
+    color:white;
+    margin: 0px auto;
+    text-align: center;
+    width: 30%;
+}
+h1 {
+    font-size: 3em;
+}
+.list {
+
+    color: black;
+    font: bold 15px Arial, sans-serif;
+    text-align: left;
+}
+.small {
+    font-size: .5em;
+}
+.quote {
+    font-size: 2em;
+}
+.end {
+    color: black;
+}
+.bold {
+    font-size: 1em;
+    
+}
