@@ -4,7 +4,7 @@ main p {
 }
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
 }
 #active {
   background-color: white;
@@ -14,11 +14,13 @@ a {
     font-size: 1.5em;
     color: white;
     margin: 40px;
+    padding: 25px;
 }
 h1, nav, footer {
   background-color: steelblue;
   color: white;
   padding: 10px;
+  margin: 50px;
   }
   img {
     width: 80%;
@@ -30,6 +32,7 @@ h1, nav, footer {
     width: 80%;
     padding: 10px;
     text-align: center;
+    margin: 50px auto;
   }
   footer {
     background-color: steelblue;
