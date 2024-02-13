@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Pacifico&family=Satisfy&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -8,6 +10,27 @@ a {
 nav a {
     text-align: center;
     text-decoration: none;
+    padding: 35px;
+}
+h2 {
+    margin: 0;
+}
+h1, h2 {
+    font-family: Pacifico, Satisfy, "Brush Script M7";
+    color: #C5FFF3;
+}
+.home-title {
+    font-size: 2em;
+    margin-top: 10px;
+}
+.book, .join {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -23,6 +46,10 @@ main section {
 }
 body {
     background-color: #0A6077;
+    font-size: 22px;
+    font-family: Outfit, 'Open Sans', Arial;
+    padding: 0;
+    margin: 0;
 }
 header {
     background-color: #310D20;
@@ -34,12 +61,14 @@ nav a:hover {
 .book, .join {
     background-color: #C5FFF3;
     text-decoration: none;
+    border-radius: 5px;
 }
 #background {
     background-color: #E15554;
 }
 .msg{
     background-color: #C5FFF3;
+    padding: 35px;
 }
 
 .logo {
@@ -47,6 +76,7 @@ nav a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img{
     width: 100%;
@@ -54,6 +84,8 @@ nav a:hover {
 
 footer {
     background-color: #310D20;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     text-decoration: none;
@@ -67,4 +99,19 @@ footer p{
 footer p a:hover{
     text-decoration: underline;
     color:#C5FFF3;
+}
+#logo_link{
+    padding-top: 5px
+}
+footer .social img{
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px;
+}
+.card-img{
+    border: 10px solid #310D20;
+}
+main section img {
+    box-sizing: border-box;
 }
