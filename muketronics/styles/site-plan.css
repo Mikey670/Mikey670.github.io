@@ -42,6 +42,13 @@ Fonts are separated by a | */
   color:#c1d3db;
 }
 
+nav a{
+  color: #df5526;
+}
+nav a:hover{
+  color:#233532;
+}
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
