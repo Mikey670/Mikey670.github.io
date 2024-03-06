@@ -111,6 +111,48 @@ nav a {
         .rapids-card{
             grid-column: 8/10;
         }
+/* Rivers Page */
+#rivers_hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+#rivers_hero img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    display: block;
+    width: 100%;
+}
+    .rivers_title {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        font-size: 3em;
+    }
+.river_content {
+    background-color: #E15554;
+    margin-top: 100px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.river_content h2{
+    text-align: center;
+}
+.river_content p{
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.1em;
+}
+.grid img {
+    width: 100%;
+    height: 100%;
+}
+
 h2 {
     margin: 0;
 }
