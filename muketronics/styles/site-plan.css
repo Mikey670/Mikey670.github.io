@@ -5,12 +5,12 @@ Fonts are separated by a | */
 
 @font-face {
   font-family: "MrFont";
-  src: "fonts/MrFont.ttf";
+  src: url(fonts/MrFont.ttf);
 }
 
 @font-face {
   font-family: "BrotherFont";
-  src: "fonts/BrotherFont";
+  src: url(fonts/BrotherFont.ttf);
 }
 
 
