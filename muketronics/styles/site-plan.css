@@ -5,14 +5,13 @@ Fonts are separated by a | */
 
 @font-face {
   font-family: "MrFont";
-  src: url(fonts/MrFont.ttf);
+  src: url(../fonts/MrFont.ttf);
 }
 
 @font-face {
   font-family: "BrotherFont";
-  src: url(fonts/BrotherFont.ttf);
+  src: url(../fonts/BrotherFont.ttf);
 }
-
 
 :root {
   /* change the values below to your colors from your palette */
