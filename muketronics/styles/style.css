@@ -1,3 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+  font-family: "MrFont";
+  src: url(../fonts/MrFont.ttf);
+}
+
+@font-face {
+  font-family: "BrotherFont";
+  src: url(../fonts/BrotherFont.ttf);
+}
+
+/*General styles*/
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141a19;
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #df5526;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffac15;
+  }
+
+body{
+    background-color: #202e2c;
+    margin: 0;
+}
+
+header{
+    background-color: #141a19;
+    height: 120px;
+}
+
+#header_nav{
+    margin: auto;
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3fr repeat(3, 1fr));
+}
+
+    #header_nav a{
+        margin:auto;
+    }
+
+    #header_nav a:nth-of-type(1){
+        grid-column: 2;
+    }
+    #header_nav a:nth-of-type(2){
+        grid-column: 3;
+    }
+    #header_nav a:nth-of-type(3){
+        grid-column: 4;
+    }
+
+    .logo{
+        margin-top: 23px;
+    }
+
+h1, h2, h3{
+    font-family: MrFont, BrotherFont, 'Courier New';
+    color: #df5526;
+}
+
+h1{
+    font-size: 2.3em;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p{
+    font-family: Fredoka, Nuntino, Verdana, sans-serif;
+    color: #c1d3db;
+}
+
+.status{
+    color: #df5526;
+}
+
+/*Home Page specific*/
+#home_grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 4fr 1fr 6fr;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+    #home_grid p{
+        font-size: larger;
+        margin: 20px;
+    }
+    .summary {
+        grid-column: 1;
+        width: 100%;
+        background-color: #141a19;
+        padding: 20px;
+        border-radius: 15px;
+        height: 60%;
+    }
+    .video_box {
+        grid-column: 3;
+        background-color: #df5526;
+        padding: 20px;
+        border-radius: 15px;
+    }
+        .video_wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .video_wrapper iframe {
+            position:absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border: 0;
+            border-radius: 15px;
+        }
+
+.title_stripe{
+    background-color: #141a19;
+    padding-top: .1px;
+    padding-left: 100px;
+}
+    .title_stripe h2{
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+#games_grid{
+    display:grid;
+    grid-template-columns: repeat(5, 25%);
+    overflow: scroll;
+    overflow-y: hidden;
+    transform: rotatex(180deg);
+}
+    .game_box{
+        background-color: #df5526;
+        transform: rotatex(180deg);
+    }
+
+    /*These are placeholders for future games*/
+    .game_box:nth-of-type(3){
+        background-color: #ffac15;
+    }
+    .game_box:nth-of-type(5){
+        background-color: #ffac15;
+    }
+
+    .game_box img{
+        width:100%;
+    }
+
+    .game_box:hover{
+        z-index: 1;
+        width: 110%;
+    }
+
+    .game_box img:hover{
+        opacity: 85%;
+        z-index: 1;
+    }
+        .description_card{
+            background-color: #233532;
+            border-radius: 15px;
+            padding: 20px;
+            width: 50%;
+        }
+
+
+/*Game page specific*/
 #html-game-frame {
     border: 0;
 }
