@@ -142,22 +142,25 @@ footer{
     }
 
 /*Home Page specific*/
-#home_grid {
+#home_flex {
     width: 70%;
-    display: grid;
-    grid-template-columns: 4fr 1fr 6fr;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
+    justify-content: space-evenly;
+    row-gap: 50px;
 }
 
-    #home_grid p{
+    #home_flex p{
         font-size: larger;
         margin: 20px;
     }
     .summary {
         grid-column: 1;
-        width: 100%;
+        max-width: 40%;
+        min-width: 360px;
         background-color: #141a19;
         padding: 20px;
         border-radius: 15px;
@@ -167,6 +170,7 @@ footer{
         background-color: #df5526;
         padding: 20px;
         border-radius: 15px;
+        max-width: 40%;
         min-width: 360px;
     }
         .video_wrapper {
