@@ -147,13 +147,13 @@ footer{
         background-color: #141a19;
         padding: 20px;
         border-radius: 15px;
-        height: 60%;
     }
     .video_box {
         grid-column: 3;
         background-color: #df5526;
         padding: 20px;
         border-radius: 15px;
+        min-width: 550px;
     }
         .video_wrapper {
             position: relative;
