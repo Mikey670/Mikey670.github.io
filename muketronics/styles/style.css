@@ -152,6 +152,7 @@ footer{
     margin-bottom: 80px;
     justify-content: space-evenly;
     row-gap: 50px;
+    column-gap: 20px;
 }
 
     #home_flex p{
@@ -165,6 +166,7 @@ footer{
         background-color: #141a19;
         padding: 20px;
         border-radius: 15px;
+        filter: drop-shadow(15px 20px 20px #141a19);
     }
     .video_box {
         grid-column: 3;
@@ -173,6 +175,7 @@ footer{
         border-radius: 15px;
         max-width: 40%;
         min-width: 360px;
+        filter: drop-shadow(15px 20px 20px #141a19);
     }
         .video_wrapper {
             position: relative;
@@ -208,6 +211,7 @@ footer{
     overflow-y: visible;
     transform: rotateX(180deg);
     transform-origin: bottom middle;
+    filter: drop-shadow(-15px 1px 20px #141a19);
 }
         #games_grid a{
         margin:0;
@@ -218,7 +222,8 @@ footer{
         scale: 1;
         z-index: 2;
         transform: rotateX(180deg) translateY(100%);
-        transition: scale .2s, z-index 0s .2s;
+        filter: drop-shadow(0 0 0 #141a19);
+        transition: scale .2s, z-index 0s .2s, filter .2s;
     }
     .game_box:first-of-type{
         transform-origin: bottom left;
@@ -244,7 +249,8 @@ footer{
     .game_box:hover{
         z-index: 4;
         scale: 1.1;
-        transition: scale 1s, z-index 0s 0s;
+        filter: drop-shadow(0 0 20px #141a19);
+        transition: scale 1s, z-index 0s 0s, filter 1s;
     }
 
     .game_box img:hover{
