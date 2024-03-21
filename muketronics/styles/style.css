@@ -36,37 +36,38 @@ body{
 
 header{
     background-color: #141a19;
-    height: 120px;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#header_flex{
+    margin:auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #header_nav{
     margin: auto;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 3fr repeat(3, 1fr);
+    display: inline-grid;
+    width: max(340px, 50%);
+    grid-template-columns: repeat(3, 1fr);
 }
 
     #header_nav a{
         margin:auto;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     #header_nav a:focus{
         background-color: #c1d3db;
     }
 
-    #header_nav a:nth-of-type(1){
-        grid-column: 2;
-    }
-    #header_nav a:nth-of-type(2){
-        grid-column: 3;
-    }
-    #header_nav a:nth-of-type(3){
-        grid-column: 4;
-    }
-
     .logo{
-        margin-top: 23px;
+        width: min(494px, 90%)
     }
 
 h1, h2, h3{
@@ -201,20 +202,35 @@ footer{
 
 #games_grid{
     display:grid;
-    grid-template-columns: repeat(6, 25%);
-    overflow: scroll;
-    overflow-y: hidden;
-    transform: rotatex(180deg);
+    padding-top: 4%;
+    grid-template-columns: repeat(6, max(255px, 25%));
+    overflow-X: scroll;
+    overflow-y: visible;
+    transform: rotateX(180deg);
+    transform-origin: bottom middle;
 }
         #games_grid a{
         margin:0;
     }
     .game_box{
         background-color: #df5526;
-        transform: rotatex(180deg);
-        width: 100%;
+        transform-origin: bottom center;
+        scale: 1;
         z-index: 2;
-        transition: width .2s, z-index 0s .2s;
+        transform: rotateX(180deg) translateY(100%);
+        transition: scale .2s, z-index 0s .2s;
+    }
+    .game_box:first-of-type{
+        transform-origin: bottom left;
+    }
+    .game_box:last-of-type{
+        transform-origin: bottom right;
+    }
+    .game_box:last-of-type .description_card{
+        left: 10%;
+    }
+    .game_box:last-of-type:hover > .description_card{
+        left: -60%
     }
 
     .game_box img{
@@ -227,8 +243,8 @@ footer{
 
     .game_box:hover{
         z-index: 4;
-        width: 110%;
-        transition: width 1s, z-index 0s 0s;
+        scale: 1.1;
+        transition: scale 1s, z-index 0s 0s;
     }
 
     .game_box img:hover{
@@ -237,19 +253,18 @@ footer{
     }
     .game_box:hover > .description_card{
         right: -60%;
-        transition: right 1s;
+        transition: all 1s;
     }
         .description_card{
             background-color: #233532;
             border-radius: 15px;
             padding: 20px;
             width: 50%;
-            margin-left: auto;
             right: 10%;
             margin-top: -150%;
             position: absolute;
             z-index: -2;
-            transition: right .5s;
+            transition: all .5s;
         }
 
 
