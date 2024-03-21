@@ -278,3 +278,24 @@ footer{
 #html-game-frame {
     border: 0;
 }
+
+
+@media (pointer:coarse) {
+    .game_box:hover{
+        scale: 1;
+        z-index: 2;
+        filter: drop-shadow(0 0 0 #141a19);
+        transition: scale .2s, z-index 0s .2s, filter .2s;
+    }
+    .game_box:hover > .description_card{
+        right: 10%;
+        transition: all .5s;
+    }
+    .game_box:last-of-type:hover > .description_card{
+        left: 10%
+    }
+    .game_box img:hover{
+        opacity: 100%;
+        z-index: 3;
+    }
+}
