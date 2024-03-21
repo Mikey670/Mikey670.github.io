@@ -217,14 +217,6 @@ footer{
         transition: width .2s, z-index 0s .2s;
     }
 
-    /*These are placeholders for future games*/
-    .game_box:nth-of-type(3){
-        background-color: #ffac15;
-    }
-    .game_box:nth-of-type(5){
-        background-color: #ffac15;
-    }
-
     .game_box img{
         width:100%;
         display: block;
