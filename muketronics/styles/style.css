@@ -300,6 +300,7 @@ footer{
 }
 
 .hero_wrapper{
+    margin-bottom: -33%;
     width: 100%;
     background: linear-gradient(transparent, #202e2c);
 }
