@@ -25,6 +25,11 @@
     background: #df5526;
   }
 
+::-webkit-scrollbar-corner{
+    border-radius: 15px;
+    background: #df5526;
+}
+
   ::-webkit-scrollbar-thumb:hover {
     background: #ffac15;
   }
@@ -86,6 +91,11 @@ h2{
 }
 
 p{
+    font-family: Fredoka, Nuntino, Verdana, sans-serif;
+    color: #c1d3db;
+}
+
+ul{
     font-family: Fredoka, Nuntino, Verdana, sans-serif;
     color: #c1d3db;
 }
@@ -275,10 +285,51 @@ footer{
 
 
 /*Game page specific*/
+
+#game_imbed{
+    margin:auto;
+    margin-top: 80px;
+    width: 1280px;
+    padding:20px;
+    background: #141a19;
+    border-radius: 15px;
+}
+
 #html-game-frame {
     border: 0;
 }
 
+.hero_wrapper{
+    width: 100%;
+    background: linear-gradient(transparent, #202e2c);
+}
+
+.controls{
+    background:#df5526;
+    padding: 20px;
+    border-radius: 15px;
+    grid-column: 1;
+}
+.game_description{
+    grid-column: 2;
+}
+.controls h2{
+    color:#c1d3db;
+}
+
+.hero_img{
+    position: relative;
+    width: 100%;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.description_grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 30px;
+}
 
 @media (pointer:coarse) {
     .game_box:hover{
