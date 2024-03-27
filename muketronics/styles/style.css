@@ -452,7 +452,7 @@ footer{
 
 @media (pointer:coarse) {
     .no-mobile{
-        visibility: collapse;
+        display: none;
     }
     .game_box:hover{
         scale: 1;
