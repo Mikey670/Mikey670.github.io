@@ -455,6 +455,7 @@ footer{
 @media (pointer:coarse) {
     .no-mobile{
         display: none;
+        position:absolute;
     }
     .game_box:hover{
         scale: 1;
