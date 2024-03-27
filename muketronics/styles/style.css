@@ -295,6 +295,7 @@ footer{
     padding:20px;
     background: #141a19;
     border-radius: 15px;
+    filter: drop-shadow(15px 20px 20px #141a19);
 }
 
 #html-game-frame {
@@ -349,6 +350,7 @@ footer{
     min-width: 360px;
     margin:auto;
     margin-top: 80px;
+    filter: drop-shadow(15px 20px 20px #141a19);
 }
 
 /* Slideshow container */
