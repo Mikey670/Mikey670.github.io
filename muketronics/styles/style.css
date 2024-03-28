@@ -284,6 +284,52 @@ footer{
             transition: all .5s;
         }
 
+/* About us page*/
+
+.bio_flex {
+    display: flex;
+    flex-wrap: wrap;
+    width:max(80%, 360px);
+    margin: auto;
+    justify-content:space-around;
+    margin-top: 80px;
+    row-gap: 80px;
+    column-gap: 40px;
+}
+
+.title_card {
+    box-sizing: border-box;
+    width:max(40%, 360px);
+    background-color: #141a19;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.bio_card {
+    box-sizing: border-box;
+    width:max(40%, 360px);
+    background-color: #141a19;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.bio_article {
+    grid-column: 1;
+}
+
+.img_wrapper{
+    padding-left: 10px;
+    float: right;
+    width: 50%;
+    margin: auto;
+}
+
+.bio_img {
+    width: 100%;
+    border-radius: 15px;
+
+}
 
 /*Game page specific*/
 
