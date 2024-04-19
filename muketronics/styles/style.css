@@ -334,12 +334,11 @@ footer{
 }
 
 /*Game page specific*/
-
 #game_imbed{
     margin:auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    width: 1280px;
+    width: 512px;
     padding:20px;
     background: #141a19;
     border-radius: 15px;
