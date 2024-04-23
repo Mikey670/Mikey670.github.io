@@ -338,6 +338,17 @@ footer{
     margin:auto;
     margin-top: 80px;
     margin-bottom: 80px;
+    width: 1280px;
+    padding:20px;
+    background: #141a19;
+    border-radius: 15px;
+    filter: drop-shadow(15px 20px 20px #141a19);
+}
+
+#pico_imbed{
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     width: 512px;
     padding:20px;
     background: #141a19;
