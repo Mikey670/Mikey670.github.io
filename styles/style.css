@@ -1,4 +1,535 @@
-a {
-    margin: 20px;
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+  font-family: "MrFont";
+  src: url(../fonts/MrFont.ttf);
+}
+
+@font-face {
+  font-family: "BrotherFont";
+  src: url(../fonts/BrotherFont.ttf);
+}
+
+/*General styles*/
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141a19;
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #df5526;
+  }
+
+::-webkit-scrollbar-corner{
+    border-radius: 15px;
+    background: #df5526;
+}
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffac15;
+  }
+
+body{
+    background-color: #202e2c;
+    margin: 0;
+}
+
+header{
+    background-color: #141a19;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#header_flex{
+    margin:auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_nav{
+    margin: auto;
+    display: inline-grid;
+    width: max(340px, 50%);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+    #header_nav a{
+        margin:auto;
+        font-size: 1.3em;
+    }
+
+    #header_nav a:focus{
+        background-color: #c1d3db;
+    }
+
+    .logo{
+        width: min(494px, 90%)
+    }
+
+h1, h2, h3{
+    font-family: MrFont, BrotherFont, 'Courier New';
+    color: #df5526;
+}
+
+h1{
+    font-size: 2.3em;
+    text-align: center;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+p{
+    font-family: Fredoka, Nuntino, Verdana, sans-serif;
+    color: #c1d3db;
+}
+
+ul{
+    font-family: Fredoka, Nuntino, Verdana, sans-serif;
+    color: #c1d3db;
+}
+
+a{
+    color: #df5526;
+    font-family: Fredoka, Nuntino, Verdana, sans-serif;
+    transition: color 1s;
+}
+
+a:hover{
+    color: #ffac15;
+}
+
+.status{
+    color: #df5526;
+}
+
+footer{
+    background-color: #141a19;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+    footer p{
+        display: inline;
+    }
+
+    footer div{
+        display: inline;
+    }
+
+    footer nav{
+        margin:auto;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_small{
+        height: 40px;
+    }
+
+    .internal_links{
+        margin: 20px;
+    }
+    a{
+        margin: 10px;
+    }
+
+    #social a{
+        text-decoration: none;
+    }
+
+/*Home Page specific*/
+#home_flex {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+    #home_flex p{
+        font-size: larger;
+        margin: 20px;
+    }
+    .summary {
+        grid-column: 1;
+        max-width: 40%;
+        min-width: 360px;
+        background-color: #141a19;
+        padding: 20px;
+        border-radius: 15px;
+        filter: drop-shadow(15px 20px 20px #141a19);
+    }
+    .video_box {
+        grid-column: 3;
+        background-color: #df5526;
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 40%;
+        min-width: 360px;
+        filter: drop-shadow(15px 20px 20px #141a19);
+    }
+        .video_wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .video_wrapper iframe {
+            position:absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border: 0;
+            border-radius: 15px;
+        }
+
+.title_stripe{
+    margin-top: 80px;
+    background-color: #141a19;
+    padding-top: .1px;
+    padding-left: 100px;
+}
+    .title_stripe h2{
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+#games_grid{
+    display:grid;
+    padding-top: 4%;
+    grid-template-columns: repeat(6, max(255px, 25%));
+    overflow-X: scroll;
+    overflow-y: visible;
+    transform: rotateX(180deg);
+    transform-origin: bottom middle;
+    filter: drop-shadow(-15px 1px 20px #141a19);
+}
+        #games_grid a{
+        margin:0;
+    }
+    .game_box{
+        background-color: #df5526;
+        transform-origin: bottom center;
+        scale: 1;
+        z-index: 2;
+        transform: rotateX(180deg) translateY(100%);
+        filter: drop-shadow(0 0 0 #141a19);
+        transition: scale .2s, z-index 0s .2s, filter .2s;
+    }
+    .game_box:first-of-type{
+        transform-origin: bottom left;
+    }
+    .game_box:last-of-type{
+        transform-origin: bottom right;
+    }
+    .game_box:last-of-type .description_card{
+        left: 10%;
+    }
+    .game_box:last-of-type:hover > .description_card{
+        left: -60%
+    }
+
+    .game_box img{
+        width:100%;
+        display: block;
+        z-index: 3;
+        opacity: 100%;
+        transition: opacity 2s;
+    }
+
+    .game_box:hover{
+        z-index: 4;
+        scale: 1.1;
+        filter: drop-shadow(0 0 20px #141a19);
+        transition: scale 1s, z-index 0s 0s, filter 1s;
+    }
+
+    .game_box img:hover{
+        opacity: 85%;
+        z-index: 4;
+    }
+    .game_box:hover > .description_card{
+        right: -60%;
+        transition: all 1s;
+    }
+        .description_card{
+            background-color: #202e2c;
+            border-radius: 15px;
+            padding: 20px;
+            width: 50%;
+            right: 10%;
+            margin-top: -150%;
+            position: absolute;
+            z-index: -2;
+            transition: all .5s;
+        }
+
+/* About us page*/
+
+.bio_flex {
+    display: flex;
+    flex-wrap: wrap;
+    width:max(80%, 360px);
+    margin: auto;
+    justify-content:space-around;
+    margin-top: 80px;
+    row-gap: 80px;
+    column-gap: 40px;
+}
+
+.title_card {
+    box-sizing: border-box;
+    width:max(40%, 360px);
+    background-color: #141a19;
+    padding: 30px;
+    border-radius: 15px;
+    filter: drop-shadow(15px 20px 20px #141a19);
+}
+
+.bio_card {
+    box-sizing: border-box;
+    width:max(40%, 360px);
+    background-color: #141a19;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 15px;
+    filter: drop-shadow(15px 20px 20px #141a19);
+}
+
+.bio_article {
+    grid-column: 1;
+}
+
+.img_wrapper{
+    padding-left: 10px;
+    float: right;
+    width: 50%;
+    margin: auto;
+}
+
+.bio_img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+/*Game page specific*/
+#game_imbed{
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 1280px;
+    padding:20px;
+    background: #141a19;
+    border-radius: 15px;
+    filter: drop-shadow(15px 20px 20px #141a19);
+}
+
+#pico_imbed{
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 512px;
+    padding:20px;
+    background: #141a19;
+    border-radius: 15px;
+    filter: drop-shadow(15px 20px 20px #141a19);
+}
+
+#html-game-frame {
+    border: 0;
+}
+
+.hero_wrapper{
+    margin-bottom: -33%;
+    width: 100%;
+    background: linear-gradient(transparent, #202e2c);
+}
+
+.controls{
+    background:#df5526;
+    padding: 20px;
+    border-radius: 15px;
+    grid-column: 1;
+}
+.game_description{
+    grid-column: 2;
+}
+.controls h2{
+    color:#c1d3db;
+}
+
+.hero_img{
+    position: relative;
+    width: 100%;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.description_grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 30px;
+}
+.article{
+    width: 80%;
+    margin:auto;
+}
+.article p{
+    font-size: large;
+}
+
+.gallary{
+    padding: 20px;
+    border-radius: 15px;
+    background: #141a19;
+    max-width: 1000px;
+    min-width: 360px;
+    margin:auto;
+    margin-top: 80px;
+    filter: drop-shadow(15px 20px 20px #141a19);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing:border-box;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  box-sizing:border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #c1d3db;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  box-sizing:border-box;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #141a19;
+  box-sizing:border-box;
+}
+
+/* Caption text */
+.text {
+  color: #c1d3db;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing:border-box;
+  font-family: Fredoka, Nuntino, Verdana, sans-serif;
+  color: #c1d3db;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #c1d3db;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  box-sizing:border-box;
+  font-family: Fredoka, Nuntino, Verdana, sans-serif;
+  color: #c1d3db;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c1d3db;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  box-sizing:border-box;
+}
+
+.active, .dot:hover {
+  background-color: #df5526;
+  box-sizing:border-box;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  box-sizing:border-box;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (pointer:coarse) {
+    .no-mobile{
+        display: none;
+        position:absolute;
+    }
+    .game_box:hover{
+        scale: 1;
+        z-index: 2;
+        filter: drop-shadow(0 0 0 #141a19);
+        transition: scale .2s, z-index 0s .2s, filter .2s;
+    }
+    .game_box:hover > .description_card{
+        right: 10%;
+        transition: all .5s;
+    }
+    .game_box:last-of-type:hover > .description_card{
+        left: 10%
+    }
+    .game_box img:hover{
+        opacity: 100%;
+        z-index: 3;
+    }
 }
