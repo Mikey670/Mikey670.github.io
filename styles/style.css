@@ -418,6 +418,14 @@ footer{
     filter: drop-shadow(15px 20px 20px #141a19);
 }
 
+.roadmap p {
+    margin-left: 20px
+}
+
+.roadmap h2{
+    margin: 20px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
