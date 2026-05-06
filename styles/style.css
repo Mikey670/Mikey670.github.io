@@ -170,11 +170,24 @@ footer{
         margin: 20px;
     }
     .summary {
-        grid-column: 1;
+
         max-width: 40%;
         min-width: 360px;
         background-color: #141a19;
         padding: 20px;
+        border-radius: 15px;
+        filter: drop-shadow(15px 20px 20px #141a19);
+    }
+        .summary_grid {
+        display: grid;
+        max-width: 40%;
+        min-width: 360px;
+        gap: 20px;
+    }
+    .bio_tag{
+        display: flex;
+        width: 100%;
+        background-color: #141a19;
         border-radius: 15px;
         filter: drop-shadow(15px 20px 20px #141a19);
     }
