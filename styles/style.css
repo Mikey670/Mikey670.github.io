@@ -185,12 +185,43 @@ footer{
         gap: 20px;
     }
     .bio_tag{
+        padding: 20px;
         display: flex;
         width: 100%;
         background-color: #141a19;
         border-radius: 15px;
         filter: drop-shadow(15px 20px 20px #141a19);
     }
+    .biotag div p{
+        line-height: 4px;
+    }
+
+    .bio_tag_img_wrap{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    .bio_tag_img_wrap img{
+        position: absolute;
+    }
+
+    .bio_tag_img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+    .bio_tag_img_back{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+
+
+    .bio_tag_img:hover{
+        opacity: 0;
+        transition: all .5s;
+    }
+
     .video_box {
         grid-column: 3;
         background-color: #df5526;
