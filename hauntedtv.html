@@ -32,10 +32,34 @@
             </div>
         </div>
         <div class="title_stripe">
-            <h2>Haunted TV Diorama</h2>
+            <h2>Haunted TV Diorama - By Mike Knight</h2>
         </div>
         <div class="article">
             <h2>Development</h2>
+            <p>This is just a little diorama that I put together as an experiment.&nbsp;This is a prototype of a possible aesthetic for a future "Channel 13" game that involves using one such haunted TV to capture ghosts.</p>
+        <p>I'm new to 3D, so this was a good learning experience. I created all of the assets myself, even the font used for the channel number and the SFX.</p>
+        <p>Some cool details that I would like to point out:
+        </p>
+        <ul><li>The bricks on the wall appear to be, but are not 3D, rather they are one transparent layer with gaps between the bricks on top of a solid back layer.&nbsp; When these layers move relatively to each-other due to perspective change, this gives the illusion that the bricks are 3D objects. Unfortunately, this illusion does break down up close, making this less viable for actual game-play.
+        </li></ul>
+        <p><img src="https://img.itch.zone/aW1nLzI3MTEyMDE1LmpwZw==/original/sFdR%2FB.jpg"><br></p>
+        <ul><li>The light coming from the screen is actually cast from a point in front of it, this is because the back-face culling of the TV model would allow the light to shine out of the back of the TV. The same thing is done for the channel indicator light.
+        </li></ul>
+        <p><img src="https://img.itch.zone/aW1nLzI3MTEyMDM1LmpwZw==/original/zG%2F3J%2B.jpg"><br></p>
+        <ul><li>Look at the TV static, do you see anything interesting?
+        </li></ul>
+        <p><br></p>
+        <p>For those interested, this is what my workflow looks like:</p>
+        <p><strong>Step 1:</strong></p>
+        <p>Create sprites using Asesprite, these are like the sides of boxes that will fold together:<em></em><span></span></p>
+        <p><img src="https://img.itch.zone/aW1nLzI3MTEyMDQ2LmpwZw==/original/76HnhG.jpg"><br></p>
+        <p><strong>2:</strong></p>
+        <p>Model using Crocotile, this software makes it easy to create simple, low-poly models like this. Of course, it has some limitations, but that just makes it more fun!</p>
+        <p><img src="https://img.itch.zone/aW1nLzI3MTEyMDc3LmpwZw==/original/vQ1CxD.jpg"><br></p>
+        <p><strong>3:</strong><br></p>
+        <p>Import models to Unity and set up the scene. This involves a little bit of scripting, animation using the built in animator, and lighting setup. Unity makes this process pretty simple.</p>
+        <p><br></p>
+        <p>&nbsp;</p>
         </div>
     </main>
     <footer>
